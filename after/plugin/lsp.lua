@@ -7,10 +7,10 @@ lsp_zero.on_attach(function(client, bufnr)
 end)
 
 -- to learn how to use mason.nvim
--- read this: https://github.com/VonHeikemen/lsp-zero.nvim/blob/v3.x/doc/md/guide/integrate-with-mason-nvim.md
+-- read this: https://github.cotm/VonHeikemen/lsp-zero.nvim/blob/v3.x/doc/md/guide/integrate-with-mason-nvim.md
 require('mason').setup({})
 require('mason-lspconfig').setup({
-  ensure_installed = {},
+  ensure_installed = { "rust_analyzer", "tsserver","dockerls","docker_compose_language_service", "golangci_lint_ls", "gopls", "graphql", "html", "htmx", "jsonls", "biome", "ltex", "lua_ls", "marksman", "nginx_language_server", "intelephense", "pylsp", "jedi_language_server" , "sqlls", "solang", "solc","tailwindcss", "vuels", "zls", "hydra_lsp"},
   handlers = {
     function(server_name)
       require('lspconfig')[server_name].setup({})
