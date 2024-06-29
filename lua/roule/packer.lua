@@ -39,5 +39,29 @@ return require('packer').startup(function(use)
 	  }
   }
 
-  
+  -- auto pairs
+  use {
+	  "windwp/nvim-autopairs",
+	  event = "InsertEnter",
+	  config = function()
+		  require("nvim-autopairs").setup {}
+	  end
+  }
+
+  -- splash screen 
+  use {
+	  "startup-nvim/startup.nvim",
+	  requires = {"nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim"},
+	  config = function()
+		  require("startup").setup({theme = "evil"}) -- put theme name here
+	  end
+  }
+
+  -- ai autocompletions 
+  use {
+	  "supermaven-inc/supermaven-nvim",
+	  config = function()
+		  require("supermaven-nvim").setup({})
+	  end,
+  }
 end)

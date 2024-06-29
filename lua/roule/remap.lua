@@ -8,7 +8,7 @@ vim.api.nvim_set_keymap('n', '<leader>t', ':botright split +terminal<CR> <i> <C-
 vim.wo.relativenumber = true
 
 
-
+vim.keymap.set("n", "<leader>mt", ":SupermavenToggle<CR>")
 
 -- full screen current buffer
 vim.keymap.set("n", "<leader>f", ":resize 90<CR>", { noremap = true, silent = true })
