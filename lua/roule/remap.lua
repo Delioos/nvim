@@ -12,3 +12,6 @@ vim.keymap.set("n", "<leader>mt", ":SupermavenToggle<CR>")
 
 -- full screen current buffer
 vim.keymap.set("n", "<leader>f", ":resize 90<CR>", { noremap = true, silent = true })
+
+-- toggle nvim tree
+vim.keymap.set("n", "<leader>nt", ":NvimTreeToggle<CR>")
