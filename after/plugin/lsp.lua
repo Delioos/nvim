@@ -18,10 +18,6 @@ require('mason-lspconfig').setup({
   },
 })
 
-
-vim.api.nvim_set_keymap('n', '<Enter>', '<cmd>lua vim.lsp.buf.accept_completion()<CR>', {noremap = true, silent = true})
 vim.api.nvim_set_keymap('n', '<C-v>', '<cmd>lua vim.lsp.buf.accept_completion()<CR>', {noremap = true, silent = true})
 vim.api.nvim_set_keymap('n', '<C-N>', '<cmd>lua vim.lsp.diagnostic.goto_next_prev(0)<CR>', {noremap = true, silent = true})
 vim.api.nvim_set_keymap('n', '<C-n>', '<cmd>lua vim.lsp.diagnostic.goto_next_prev(1)<CR>', {noremap = true, silent = true})
-
-
