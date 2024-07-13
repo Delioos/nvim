@@ -71,4 +71,7 @@ return require('packer').startup(function(use)
 		  require("supermaven-nvim").setup({})
 	  end,
   }
+
+  --  time tracking 
+  use 'wakatime/vim-wakatime'
 end)
