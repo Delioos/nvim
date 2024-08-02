@@ -5,7 +5,7 @@ not using kickstart anymore, built my personal conf from the base of @theprimeag
 ## install dependencies
 
 ### packer
-go to packer file run ```:so``` then run ```:PackerSync``` then 
+go to packer file run ```:w``` then run ```:PackerSync``` then 
 
 ### mason
 ```:Mason ``` and use U to Update all mason plugins
